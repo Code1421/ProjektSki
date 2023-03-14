@@ -1,0 +1,40 @@
+﻿@page
+@model ProjektSki.Pages.Categories.EditModel
+
+@{
+    ViewData["Title"] = "Edycja kategorii";
+}
+
+<h1>Edycja</h1>
+
+<h4>Kategoria</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Category.Id" />
+            <div class="form-group">
+                <label asp-for="Category.ShortName" class="control-label"></label>
+                <input asp-for="Category.ShortName" class="form-control" />
+                <span asp-validation-for="Category.ShortName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category.LongName" class="control-label"></label>
+                <input asp-for="Category.LongName" class="form-control" />
+                <span asp-validation-for="Category.LongName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Powrót</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

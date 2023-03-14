@@ -1,0 +1,22 @@
+﻿@page
+@model ProjektSki.Pages.Admin.AccessLogsModel
+@{
+    ViewData["Title"] = "Logi dostepu";
+}
+<h2>Logi</h2>
+<table class="table table-striped">
+    <tr>
+        <th>
+            Wiadomosc
+        </th>
+    </tr>
+    @foreach (var element in @Model.logs)
+    { 
+        <tr>
+            <td>@element</td>
+        </tr>
+    }
+</table>
+<br/>
+
+<a asp-page="./AdminPage">Powrót</a>

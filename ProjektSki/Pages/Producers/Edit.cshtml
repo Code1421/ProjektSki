@@ -1,0 +1,40 @@
+﻿@page
+@model ProjektSki.Pages.Producers.EditModel
+
+@{
+    ViewData["Title"] = "Edycja producenta";
+}
+
+<h1>Edycja</h1>
+
+<h4>Producent</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Producer.Id" />
+            <div class="form-group">
+                <label asp-for="Producer.Name" class="control-label"></label>
+                <input asp-for="Producer.Name" class="form-control" />
+                <span asp-validation-for="Producer.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Producer.Country" class="control-label"></label>
+                <input asp-for="Producer.Country" class="form-control" />
+                <span asp-validation-for="Producer.Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Powrót</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

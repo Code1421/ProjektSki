@@ -1,0 +1,56 @@
+﻿@page
+@model ProjektSki.Pages.Categories.IndexModel
+
+@{
+    ViewData["Title"] = "Kategorie";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Nowa kategoria</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Category[0].ShortName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category[0].LongName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.sp_Category)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShortName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LongName)
+                </td>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@item.Id">Detale</a> |
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Edytuj</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Usuń</a>
+                </td>
+            </tr>
+            @foreach (var prod in item.Products)
+            {
+                <tr>
+                    <td style="padding-left:40px">
+                        @Html.DisplayFor(modelItem => prod.Name)
+
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

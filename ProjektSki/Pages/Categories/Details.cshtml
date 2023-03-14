@@ -1,0 +1,31 @@
+﻿@page
+@model ProjektSki.Pages.Categories.DetailsModel
+
+@{
+    ViewData["Title"] = "Detale kategorii";
+}
+
+<h1>Informacje</h1>
+
+<div>
+    <h4>Kategoria</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Category.ShortName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Category.ShortName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Category.LongName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Category.LongName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Category.Id">Edytuj</a> |
+    <a asp-page="./Index">Powrót</a>
+</div>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<log>
+  <messeage id="1">
+    <denied>Uzytkownik pracownik1 o roli worker probowal sie dostac o godzinie 6/10/2022 2:24:17 PM do strony /Categories/Edit do ktorej nie ma dostepu.</denied>
+  </messeage>
+  <messeage id="2">
+    <denied>Uzytkownik pracownik1 o roli worker probowal sie dostac o godzinie 6/10/2022 2:27:48 PM do strony /Admin/AdminPage do ktorej nie ma dostepu.</denied>
+  </messeage>
+  <messeage id="2">
+    <denied>Uzytkownik pracownik1 o roli worker probowal sie dostac o godzinie 6/10/2022 2:28:00 PM do strony /Producers/Create do ktorej nie ma dostepu.</denied>
+  </messeage>
+  <messeage id="2">
+    <denied>Uzytkownik pracownik1 o roli worker probowal sie dostac o godzinie 6/10/2022 2:28:07 PM do strony /Products/Delete do ktorej nie ma dostepu.</denied>
+  </messeage>
+  <messeage id="2">
+    <denied>Uzytkownik manager o roli manager probowal sie dostac o godzinie 6/10/2022 2:28:26 PM do strony /Producers/Delete do ktorej nie ma dostepu.</denied>
+  </messeage>
+  <messeage id="2">
+    <denied>Uzytkownik manager o roli manager probowal sie dostac o godzinie 6/10/2022 2:28:29 PM do strony /Admin/AdminPage do ktorej nie ma dostepu.</denied>
+  </messeage>
+  <messeage id="2">
+    <denied>Uzytkownik pracownik2 o roli worker probowal sie dostac o godzinie 6/10/2022 2:29:45 PM do strony /Producers/Delete do ktorej nie ma dostepu.</denied>
+  </messeage>
+  <messeage id="2">
+    <denied>Uzytkownik pracownik2 o roli worker probowal sie dostac o godzinie 6/10/2022 2:29:48 PM do strony /Categories/Create do ktorej nie ma dostepu.</denied>
+  </messeage>
+  <messeage id="2">
+    <denied>Uzytkownik pracownik2 o roli worker probowal sie dostac o godzinie 6/10/2022 2:29:52 PM do strony /Producers/Edit do ktorej nie ma dostepu.</denied>
+  </messeage>
+  <messeage id="2">
+    <denied>Uzytkownik pracownik2 o roli worker probowal sie dostac o godzinie 6/10/2022 2:29:54 PM do strony /Admin/AdminPage do ktorej nie ma dostepu.</denied>
+  </messeage>
+  <messeage id="11">
+    <denied>Uzytkownik pracownik1 o roli worker probowal sie dostac o godzinie 10/10/2022 9:43:57 PM do strony /Categories/Edit do ktorej nie ma dostepu.</denied>
+  </messeage>
+</log>

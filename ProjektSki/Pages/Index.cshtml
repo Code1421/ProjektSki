@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Glowna";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Witaj</h1>
+    <p>Strona poświęcona zarządzaniu magazynem przedmiotów związanych z narciarstwem wodnym</p><br />
+    <img src="@Url.Content(@Model.pathh)" width="1000" /><br /><br />
+
+</div>
+<div>
+    <form method="post">
+        <select asp-for="message">
+            <option value="~/Images/waterskier.jpg">Narciarz</option>
+            <option value="~/Images/boat.jpg">SkiNautique</option>
+        </select>
+        <button type="submit">Zmień</button>
+    </form>
+</div>

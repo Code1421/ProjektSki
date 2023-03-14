@@ -1,0 +1,46 @@
+﻿@page
+@model ProjektSki.Pages.Admin.CreateUserModel
+@{
+    ViewData["Title"] = "Dodawanie użytkownika";
+}
+
+<h2>Nowy uzytkownik</h2>
+<br />
+<br />
+<div class="container">
+    <form class="form-horizontal" method="post">
+        <div class="form-group">
+            <label asp-for="user.userName" class="control-label col-sm2"></label>
+            <div class="col-sm-6">
+                <input asp-for="user.userName" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="user.password" class="control-label col-sm2"></label>
+            <div class="col-sm-6">
+                <input asp-for="user.password" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm2">Powtórz hasło</label>
+            <div class="col-sm-6">
+                <input asp-for="password_val.password" class="form-control">
+            </div>
+        </div>
+        <div>
+            <label asp-for="user.role"></label>
+            <select name="user.role" id="role-selection">
+                <option value=" ">---Wybierz---</option>
+                <option value="worker">Pracownik</option>
+                <option value="manager">Manager</option>
+                <option value="admin">Administrator</option>
+            </select><br />
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn btn-primary">Zatwierdź</button><br/>
+                <a asp-page="./AdminPage">Powrót</a>
+            </div>
+        </div>
+    </form>
+</div>
